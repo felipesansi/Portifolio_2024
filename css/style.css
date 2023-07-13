@@ -270,7 +270,11 @@ animation-iteration-count: infinite;
     text-decoration: none;
  }
 
-
+ #btn-cv:hover
+ {
+   background-color: #000000;
+   color: #ffff;
+ }
 #projeto img
 
 {
@@ -318,16 +322,40 @@ animation-iteration-count: infinite;
  
 .link-usuario
  {
-    text-decoration: none;
+     text-decoration: none;
      color: white;
-     background-color: #061826;
+     background-color: #061826; 
      height: 50px 50px;
      width: 50px;
      padding: 8px 50px ;
-
      border-radius: 15px;
-  
+  }
 
+.icone-menu-mobile
+ {
+    display: none;
+
+ }
+
+ .mobile-menu
+ {
+    display: none;
+ }
+
+ @media screen and (max-width:730px ) 
+ {
+    
+    .nav-bar
+    {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item
+    {
+        display: none;
+    }
+    .icone-menu-mobile{
+        display: block;
+    }
  }
 
  .card-projeto a:hover
