@@ -321,6 +321,30 @@ animation-iteration-count: infinite;
     
 
 }
+.card-portifolio1
+
+{
+    background-color:#0CC0DF;
+    height: 370px;
+    width: 300px;
+    padding: 20px 35px;
+    border-radius: 30px;
+    text-align: center;
+
+
+}
+.card-portifolio1:hover{
+    background-color: orangered;
+    color: #0CC0DF;
+    width: 320px;
+    font-weight: bold;
+    transition-property: all;
+    transition-duration: 1.4s ;
+    transition-delay: 0.1s;
+    
+
+}
+ 
  
  .cards-projeto{
     display: flex;
@@ -350,6 +374,7 @@ animation-iteration-count: infinite;
  .mobile-menu
  {
     display: none;
+    
  }
 
  @media screen and (max-width:730px ) 
@@ -363,9 +388,31 @@ animation-iteration-count: infinite;
     {
         display: none;
     }
-    .icone-menu-mobile{
+    .icone-menu-mobile
+    {
         display: block;
     }
+    .icone-menu-mobile button
+    {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+   .menu-mobile ul 
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom:1rem ;
+    }
+
+    
+    .abrir
+    {
+        display: block;
+    }
+
+
  }
 
  .card-projeto a:hover
@@ -519,16 +566,87 @@ animation-iteration-count: infinite;
     background-color: #c4cbcf;
     color: #000000;
  }
-
-
- 
- footer
- {
-    height: 60px;
-    font-family: 'Inter', sans-serif;
-    background-color: #203645;
-   color: #ffffffc9;
+ footer{
+    width: 100%;
+    color:#0CC0DF;
+    
  }
+ #footer-contener
+ {
+
+    background-color: #203645;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 3rem 3.5rem;
+ }
+
+ #footer-contatos h1
+ {
+    margin-bottom: 0.75rem;
+    font-family: 'mao' sans-serif;
+ }
+
+ #footer-redes
+ {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+ }
+
+ #footer-redes .footer-link{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #0CC0DF;
+    border-radius: 50%;
+    border:#061826 solid;
+    text-decoration: none;
+    background-color: #0f3238;
+
+ }
+ #footer-redes .footer-link i{
+    font-size: 1.5rem;
+ }
+ 
+ .footer-lista
+ {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none; 
+ }
+
+ .footer-lista .footer-link
+ {
+    color: #c4cbcf;
+    text-decoration: none; 
+ }
+
+ .footer-link:hover
+ {
+    transition: all;
+    transition-duration: 1.5s;
+    color: #0CC0DF
+ }
+
+ @media screen and (max-width:768px){
+   #footer-contener{
+        grid-template-columns: repeat(2,1fr);
+        gap:2rem;
+   } 
+   
+ }
+
+ @media screen and (max-width:426px){
+    #footer-contener{
+         grid-template-columns: repeat(1,1fr);
+        padding: 3rem 2rem;
+    } 
+  }
+
+
  #topo
  {
     
@@ -549,7 +667,12 @@ animation-iteration-count: infinite;
     transition-duration: 0.9;
  }
 
-
+ #footer-copy
+ {
+    background-color:#061826;
+    align-items: center;
+    text-align: center;
+ }
  
 
 
