@@ -1,13 +1,8 @@
-AbrirMenu()
-{
-   let menu_moble =document.querySelector('.mobile-menu')
-
-   if(menu_moble.classList.contains('abrir'))
-   {
-    menu_moble.classList.remove('abrir')
-   }
-   else
-   {
-     menu_moble.classList.add('abrir')
-   }
+function AbrirMenu() {
+  let menuMobile = document.querySelector('.mobile-menu');
+  if (menuMobile.classList.contains('abrir')) {
+      menuMobile.classList.remove('abrir');
+  } else {
+      menuMobile.classList.add('abrir');
+  }
 }
