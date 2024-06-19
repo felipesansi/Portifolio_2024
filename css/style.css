@@ -137,7 +137,7 @@ picture img
 section
 
 {
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
 #btn-mais
@@ -292,7 +292,9 @@ animation-iteration-count: infinite;
      height: 200px;
      width: 200px;
 }
-
+#projeto .conterner{
+    height: 1000px;
+}
 
 .Titulo-projeto{
     color: #ffff;
@@ -392,11 +394,80 @@ animation-iteration-count: infinite;
   font-weight: 300;
  
 }
+.card-cep
+
+{
+    background-color:#0CC0DF;
+    height: 370px;
+    font-size: 13px;
+    width: 300px;
+    padding: 20px 35px;
+    border-radius: 30px;
+    text-align: center;
+
+
+}
+.card-cep:hover{
+    background-color: rgb(63, 63, 70);
+    color: #0CC0DF;
+    font-size: 18px;
+    width: 320px;
+    transition-property: all;
+    transition-duration: 1.4s ;
+    transition-delay: 0.1s;
+    
+
+}
+.card-cep p {
+  padding: 20px;
+  font-family: 'Inter';
+  font-weight: 300;
  
- .cards-projeto{
-    display: flex;
-    justify-content: space-around;
- }
+}
+ 
+
+.card-senha
+
+{
+    background-color:#0CC0DF;
+    height: 370px;
+    font-size: 13px;
+    width: 300px;
+    padding: 20px 35px;
+    border-radius: 30px;
+    text-align: center;
+
+
+}
+.card-senha:hover{
+    background-color: rgb(63, 63, 70);
+    color: #0CC0DF;
+    font-size: 18px;
+    width: 320px;
+    transition-property: all;
+    transition-duration: 1.4s ;
+    transition-delay: 0.1s;
+    
+
+}
+.card-senha p {
+  padding: 20px;
+  font-family: 'Inter';
+  font-weight: 300;
+ 
+}
+ 
+
+
+.cards-projeto {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 50px;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+}
  
  
 .link-usuario
@@ -674,7 +745,9 @@ animation-iteration-count: infinite;
  }
 
  @media screen and (max-width:768px){
-   #footer-contener{
+   
+    #footer-contener
+   {
         grid-template-columns: repeat(2,1fr);
         gap:2rem;
    } 
@@ -719,29 +792,34 @@ animation-iteration-count: infinite;
     align-items: center;
     text-align: center;
  }
- /* Adicione estas regras no seu arquivo CSS */
+ 
 
-/* Estilos para dispositivos móveis */
 @media only screen and (max-width: 768px) {
-    .nav-bar {
+
+    .nav-bar 
+    {
         padding: 1rem;
     }
 
-    .nav-item {
+    .nav-item 
+    {
         display: none;
     }
 
-    .icone-menu-mobile {
+    .icone-menu-mobile 
+    {
         display: block;
     }
 
-    .icone-menu-mobile button {
+    .icone-menu-mobile button 
+    {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
 
-    .mobile-menu ul {
+    .mobile-menu ul 
+    {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -766,7 +844,8 @@ animation-iteration-count: infinite;
         padding-left: 0;
     }
 
-    #sobre-mim h3 {
+    #sobre-mim h3 
+    {
         font-size: 30px;
         padding-left: 0;
     }
@@ -791,14 +870,16 @@ animation-iteration-count: infinite;
 
     .card-jogo,
     .card-portifolio1,
-    .card-cronometro {
+    .card-cronometro 
+    {
         width: 80%;
         margin-bottom: 30px;
     }
 
     .card-jogo p,
     .card-portifolio1 p,
-    .card-cronometro p {
+    .card-cronometro p 
+    {
         padding: 20px;
     }
 
@@ -856,9 +937,11 @@ animation-iteration-count: infinite;
         display: none;
     }
 
-    .conterner {
+    .conterner 
+    {
         height: auto;
         padding-top: 15px;
+
     }
     .Titulo-certificado{
         padding-top: 50%;
@@ -871,38 +954,109 @@ animation-iteration-count: infinite;
         padding-top: 2em;
         padding-left: 0;
     }
+    .texto-1
+    {
+    text-align: center;
+    padding-bottom: 23em;
+    bottom: 20px;
+    position: absolute;
+    top: 120px;
+    width: 50%;
+    left: 207px;
+    line-height: 0.8;
+    height: 0.5%;
 
-    #sobre-mim h3 {
+    }
+    .texto-1  h2
+    {
+
+        font-size: 20px;
+        font-weight: bolder;
+    }
+   
+    .texto-1 #btn-mais
+    {
+        font-size: 9px;
+        margin-left: 8px;
+    }
+  
+    .texto-1 #linguagem
+    {
+        font-size: 14px;
+        
+    }
+   
+    .texto-1 #nome
+    {
+        font-size: 25px;
+    }
+   
+    #sobre-mim h3 
+    {
         font-size: 24px;
         padding-left: 0;
     }
 
-    #sobre-mim h4 {
+    #sobre-mim h4 
+    {
         position: static;
         padding: 10px;
         text-align: center;
         left: auto;
     }
-    .assinatura{
-        left: 55%;
+   
+    #sobre-mim .assinatura 
+    {
+    left: 55%;
+    padding-top: 66px;
     }
-    #btn-cv {
-        position: static;
-        left: auto;
-        margin-top: 20px;
+    
+    #btn-cv 
+    {
+        position: relative;
+        left: 63%; 
+    }
+   
+    #btn-cv:hover
+    {
+     background-color: #000000;
     }
 
-    .cards-projeto {
+    .cards-projeto 
+    {
         flex-direction: column;
         align-items: center;
     }
+    
+    #projeto .conterner{
+        height: auto;
+    }
+    
 
     .card-jogo,
     .card-portifolio1,
-    .card-cronometro {
+    .card-cronometro,
+    .card-cep,
+    .card-senha{
+
         width: 90%;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        
     }
+
+    
+    .card-jogo:hover,
+    .card-portifolio1:hover,
+    .card-cronometro:hover,
+    .card-cep:hover,
+    .card-senha:hover 
+    {
+        height: 450px;
+
+    }
+    
 
     .card-jogo p,
     .card-portifolio1 p,
@@ -910,21 +1064,40 @@ animation-iteration-count: infinite;
         padding: 20px;
     }
 
+    
+
     #card-git,
     #card-equipes,
     #card-linux,
-    #card-pensamento {
+    #card-pensamento 
+    {
+       
         width: 90%;
         margin-bottom: 30px;
+      
     }
 
-    .cards-certificado {
+    #card-git h2,
+    #card-equipes h2 ,
+    #card-linux h2,
+    #card-pensamento h2
+    {
+        padding: 20px;
+
+    } 
+     
+   
+
+    .cards-certificado 
+    {
         flex-direction: column;
         align-items: center;
     }
 
-    #topo {
+    #topo 
+    {
         left: 5px;
+      
     }
 
     #footer-contener {
