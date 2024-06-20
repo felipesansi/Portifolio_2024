@@ -557,7 +557,7 @@ animation-iteration-count: infinite;
  }
  ::-webkit-scrollbar{
   background-color:#061826;
-  width: 10px;
+
  }
 
  ::-webkit-scrollbar-thumb
