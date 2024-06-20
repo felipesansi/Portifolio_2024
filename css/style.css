@@ -539,7 +539,15 @@ animation-iteration-count: infinite;
  {
     padding: 20px;
  }
+#projeto  .assinatura
+{
+ display: none;
 
+  
+}
+#certificado .assinatura{
+    display:none ;
+}
  
  
  
@@ -602,7 +610,7 @@ animation-iteration-count: infinite;
  #card-equipes:hover
  {
     width: 280px;
-    background-color: rgb(33, 35, 156);
+    background-color: rgb(44, 109, 73);
     transition-property: all;
     transition-duration: 1.4s ;
     transition-delay: 0.1s;
@@ -655,6 +663,8 @@ animation-iteration-count: infinite;
     justify-content: space-around;
 
  }
+
+ 
  
  
 
@@ -1011,6 +1021,15 @@ animation-iteration-count: infinite;
     padding-top: 66px;
     }
     
+    #projeto .assinatura
+    {
+        display: none;
+    }
+
+    #certificado .assinatura{
+        display: none;
+    }
+    
     #btn-cv 
     {
         position: relative;
@@ -1072,7 +1091,7 @@ animation-iteration-count: infinite;
     #card-pensamento 
     {
        
-        width: 90%;
+        width: 80%;
         margin-bottom: 30px;
       
     }
