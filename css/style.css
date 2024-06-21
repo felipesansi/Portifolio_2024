@@ -1042,6 +1042,14 @@ animation-iteration-count: infinite;
         text-align: center;
         left: auto;
     }
+    #sobre-mim h3
+    {
+        padding: 30px;
+     font-size: 40px;
+    }
+  #texto-sobre{
+    padding: 40px;
+  }  
    
     #sobre-mim .assinatura 
     {
