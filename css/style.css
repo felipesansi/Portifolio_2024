@@ -7,7 +7,13 @@
     font-family: 'mao';
     src: url('../fontes/brittany_signature/BrittanySignature.ttf') format('truetype');
 }
-
+:root{
+    --color-fundo: #203645;
+    --color-text-titulo:#0CC0DF;
+    --color-text-normal:#ffff;
+    --color-botao:#000000;
+    --cor-principal:#061826;
+}
 html
 {
 scroll-behavior: smooth;
@@ -25,10 +31,11 @@ scroll-behavior: smooth;
 header
 
 {
-    background-color: #203645;
+    background-color: var(--color-fundo);
     box-sizing: 0px 3px 10px ;
     
 }
+
 .nav-bar
 
 {
@@ -51,9 +58,8 @@ header
     font-family: 'mao';
     font-size: 2em;
     padding: 10PX 20px 10px 40PX;
-    color: #0CC0DF;
+    color: var(--color-text-titulo);
 }
-
 .nav-lista
 
 {
@@ -78,7 +84,7 @@ header
 {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #ffff;
+    color: var(--color-text-normal);
   
     font-family: 'Inter', sans-serif;
     padding: 2em;
@@ -87,7 +93,7 @@ header
 .nav-link:hover
 
 {
-   color:  #0CC0DF;
+   color:  var(--color-text-titulo);
 }
 
 picture img
@@ -110,26 +116,27 @@ picture img
 {
     padding: 50px;
     text-align: center;
-    color: #0CC0DF;
+    color: var(--color-text-titulo);
     font-size: 3em;
 }
 .texto-capa{
-    color: #0CC0DF;
+    color: var(--color-text-titulo);
     font-size: 50px;
 }
 .assinatura{
     font-family: 'mao';
-    color: #0CC0DF;
+    color: var(--color-text-titulo);
     font-size: 2em;
     position: absolute;
     left:  170vh;
     padding: 10px;
 }
 
+
 #nome
 
 {
-   color: floralwhite;
+   color: var(--color-text-normal);
    font-size: 3em;
 
 }
@@ -143,8 +150,8 @@ section
 #btn-mais
 
 {
-    background-color :#000000;
-    color: #ffff;
+    background-color :var(--color-botao);
+    color: var(--color-text-normal);
     padding: 8px 50px ;
     text-decoration: none;
     border-radius: 10px;
@@ -159,8 +166,8 @@ section
 #btn-mais:hover
 
 {
-  background-color: #0CC0DF;
-  color:#000000;
+  background-color: var(--color-text-titulo);
+  color: var(--color-botao);
   
 }
 .texto-1 h2 {
@@ -171,15 +178,15 @@ section
 #linguagem
 
 {
-   padding: 20px;
-color: #ffff;
+padding: 20px;
+color:var(--color-text-normal);
 text-align: center;
 }
 
 main
 
 {
-    background-color: #061826;
+    background-color: var(--cor-principal);
     padding-bottom: 70px;
     width: 100%;
 }
@@ -261,7 +268,7 @@ animation-iteration-count: infinite;
 #sobre-mim h4
 {
     font-family: 'mao';
-    color: #0CC0DF;
+    color: var(--color-text-titulo);
     font-size: 2em;
     position: absolute;
     left:  170vh;
@@ -276,15 +283,15 @@ animation-iteration-count: infinite;
     margin-top: 400px;
     height: 20px;
     border-radius: 10px;
-    color: #ffffffc9;
-    background-color: #0CC0DF;
+    color: var(--color-text-normal);
+    background-color: var(--color-text-titulo);
     text-decoration: none;
  }
 
  #btn-cv:hover
  {
-   background-color: #000000;
-   color: #ffff;
+   background-color: var(--color-botao);
+   color: var(--color-text-normal)
  }
 #projeto img
 
@@ -295,16 +302,10 @@ animation-iteration-count: infinite;
 #projeto .conterner{
     height: 1000px;
 }
-
-.Titulo-projeto{
-    color: #ffff;
-}
-
-
 .card-jogo
 
 {
-    background-color:#0CC0DF;
+    background-color:var(--color-text-titulo);
     font-size: 13px;
     height: 370px;
     width: 300px;
@@ -317,7 +318,7 @@ animation-iteration-count: infinite;
 .card-jogo:hover
 {
     background-color: orangered;
-    color: #0CC0DF;
+    color: var(--color-text-titulo);
     width: 320px;
     font-size: 18px;
     transition-property: all;
@@ -335,7 +336,7 @@ animation-iteration-count: infinite;
 .card-portifolio1
 
 {
-    background-color:#0CC0DF;
+    background-color:var(--color-text-titulo);
     height: 370px;
     font-size: 13px;
     width: 300px;
@@ -347,7 +348,7 @@ animation-iteration-count: infinite;
 }
 .card-portifolio1:hover{
     background-color: rgb(63, 63, 70);
-    color: #0CC0DF;
+    color: var(--color-text-titulo);
     font-size: 18px;
     width: 320px;
     transition-property: all;
@@ -367,7 +368,7 @@ animation-iteration-count: infinite;
 .card-cronometro
 
 {
-    background-color:#0CC0DF;
+    background-color:var(--color-text-titulo);
     height: 370px;
     font-size: 13px;
     width: 300px;
@@ -378,8 +379,8 @@ animation-iteration-count: infinite;
 
 }
 .card-cronometro:hover{
-    background-color: rgb(26, 85, 36);
-    color: #0CC0DF;
+    background-color: rgb(63, 22, 29);
+    color: var(--color-text-titulo);
     font-size: 18px;
     width: 320px;
     transition-property: all;
@@ -441,7 +442,7 @@ animation-iteration-count: infinite;
 }
 .card-senha:hover{
     background-color: rgb(63, 63, 70);
-    color: #0CC0DF;
+    color: var(--color-text-titulo);
     font-size: 18px;
     width: 320px;
     transition-property: all;
@@ -468,8 +469,7 @@ animation-iteration-count: infinite;
     margin: 0 auto;
     width: 90%;
 }
- 
- 
+
 .link-usuario
  {
      text-decoration: none;
@@ -480,125 +480,11 @@ animation-iteration-count: infinite;
      padding: 8px 50px ;
      border-radius: 15px;
   }
-  .redes{
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-  }
-.redes .contato i{
-    font-size: 1.5rem;
-    
-}
-.redes .contato
-{
-   
-
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    color: #2b6666;
-    border-radius: 50%;
-    border:#144e7a solid;
-    text-decoration: none;
-    background-color: #0f3238;
-   
- 
-}
-.redes .contato:hover
-
-{ color: #ffff;
-    background-color: #0CC0DF;
-}
-.icone-menu-mobile
- {
-    display: none;
-
- }
-
- .mobile-menu
- {
-    display: none;
-    
- }
-
-
- @media screen and (max-width:730px ) 
- {
-    
-    .nav-bar
-    {
-        padding: 1.5rem 4rem;
-    }
-    .nav-item
-    {
-        display: none;
-    }
-    .icone-menu-mobile
-    {
-        display: block;
-    }
-    .icone-menu-mobile button
-    {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-   .menu-mobile ul 
-    {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom:1rem ;
-    }
-
-    
-    .abrir
-    {
-        display: block;
-    }
-
-
- }
-
- .card-projeto a:hover
- {
-    background-color: #203645
- }
- .card-projeto p
- {
-    padding: 20px;
- }
-
- 
- ::-webkit-scrollbar-track{
-    background-color:#061826
- }
- ::-webkit-scrollbar{
-    width: 10px;
-  background-color:#061826;
-  
-
- }
-
- ::-webkit-scrollbar-thumb
- 
- {
-
-    background-color:#0CC0DF;
-    
-    border-radius: 3px;
-    
- }
-  
- 
- #certificado img
+  #certificado img
  {
     height: 200px;
     width: 200px;
  }
- 
  #card-git
  {
     background-color:#0CC0DF;
@@ -712,7 +598,62 @@ animation-iteration-count: infinite;
     background-color: #c4cbcf;
     color: #000000;
  }
- footer{
+
+  .redes
+  {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+  }
+.redes .contato i
+{
+    font-size: 1.5rem;
+    
+}
+.redes .contato
+{
+   
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #2b6666;
+    border-radius: 50%;
+    border:#144e7a solid;
+    text-decoration: none;
+    background-color: #0f3238;
+   
+ 
+}
+.redes .contato:hover
+
+{ 
+    color: #ffff;
+    background-color: #0CC0DF;
+}
+#topo
+ {
+    
+     padding-top: 20px;
+     left: 30px;
+     position:absolute
+ }
+
+ #btn-topo
+ {
+    height: 48px;
+    width: 116px;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: #0CC0DF;
+    color: #ffffffc9;
+    transition: all;
+    transition-duration: 0.9;
+ }
+
+footer{
     width: 100%;
     color:#0CC0DF;
     
@@ -779,45 +720,6 @@ animation-iteration-count: infinite;
     transition-duration: 1.5s;
     color: #0CC0DF
  }
-
- @media screen and (max-width:768px){
-   
-    #footer-contener
-   {
-        grid-template-columns: repeat(2,1fr);
-        gap:2rem;
-   } 
-   
- }
-
- @media screen and (max-width:426px){
-    #footer-contener{
-         grid-template-columns: repeat(1,1fr);
-        padding: 3rem 2rem;
-    } 
-  }
-
-
- #topo
- {
-    
-     padding-top: 20px;
-     left: 30px;
-     position:absolute
- }
-
- #btn-topo
- {
-    height: 48px;
-    width: 116px;
-    cursor: pointer;
-    border-radius: 20px;
-    background-color: #0CC0DF;
-    color: #ffffffc9;
-    transition: all;
-    transition-duration: 0.9;
- }
-
  #footer-copy
  {
 
@@ -828,122 +730,56 @@ animation-iteration-count: infinite;
     align-items: center;
     text-align: center;
  }
- 
+ .icone-menu-mobile
+ {
+    display: none;
+ }
+ .mobile-menu
+ {
+    display: none;
+ }
 
-@media only screen and (max-width: 768px) {
-
-    .nav-bar 
+ @media screen and (max-width:730px ) 
+ {
+    .nav-bar
     {
-        padding: 1rem;
+        padding: 1.5rem 4rem;
     }
-
-    .nav-item 
+    .nav-item
     {
         display: none;
     }
-
-    .icone-menu-mobile 
+    .icone-menu-mobile
     {
         display: block;
     }
-
-    .icone-menu-mobile button 
+    .icone-menu-mobile button
     {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+.mobile-menu ul
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.mobile-menu .nav-item{
+    display: block;
+    padding-top: 1.2rem;
 
-    .mobile-menu ul 
-    {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
+}
+.abrir
+{
 
-    .mobile-menu {
-        display: none;
-    }
-
-    .conterner {
-        height: auto;
-        padding-top: 15px;
-    }
-
-    #sobre-mim img {
-        position: static;
-        height: auto;
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 2em;
-        padding-left: 0;
-    }
-
-    #sobre-mim h3 
-    {
-        font-size: 30px;
-        padding-left: 0;
-    }
-
-    #sobre-mim h4 {
-        position: static;
-        padding: 10px;
-        text-align: center;
-        left: auto;
-    }
-
-    #btn-cv {
-        position: static;
-        left: auto;
-        margin-top: 20px;
-    }
-
-    .cards-projeto {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card-jogo,
-    .card-portifolio1,
-    .card-cronometro 
-    {
-        width: 80%;
-        margin-bottom: 30px;
-    }
-
-    .card-jogo p,
-    .card-portifolio1 p,
-    .card-cronometro p 
-    {
-        padding: 20px;
-    }
-
-    #card-git,
-    #card-equipes,
-    #card-linux,
-    #card-pensamento {
-        width: 80%;
-        margin-bottom: 30px;
-    }
-
-    .cards-certificado {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #topo {
-        left: 5px;
-    }
-
-    #footer-contener {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        padding: 3rem 1.5rem;
-    }
+    display: block;
 }
 
-@media only screen and (max-width: 426px) {
+
+ }
+ @media only screen and (max-width: 426px) {
     
     body{
         overflow-x: hidden;
@@ -957,26 +793,33 @@ animation-iteration-count: infinite;
         display: none;
     }
 
-    .icone-menu-mobile {
+    .icone-menu-mobile
+    {
         display: block;
     }
-
-    .icone-menu-mobile button {
+    .icone-menu-mobile button
+    {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+.mobile-menu ul
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.mobile-menu .nav-item{
+    display: block;
+    padding-top: 1.2rem;
 
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
-    }
+}
+.abrir
+{
 
-    .mobile-menu {
-        display: none;
-    }
+    display: block;
+}
 
     .conterner 
     {
@@ -1001,7 +844,7 @@ animation-iteration-count: infinite;
     padding-bottom: 23em;
     bottom: 20px;
     position: absolute;
-    top: 120px;
+    top: 312px;
     width: 50%;
     left: 207px;
     line-height: 0.8;
